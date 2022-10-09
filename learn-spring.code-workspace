@@ -1,7 +1,7 @@
 {
 	"folders": [
 		{
-			"path": "spring-jpa"
+			"path": "spring-pgsql-jpa"
 		}
 	],
 	"settings": {

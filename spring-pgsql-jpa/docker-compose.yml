@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+  postgres:
+    container_name: postgres_container
+    image: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-learnspringboot}
+      PGDATA: /data/postgres
+    volumes:
+       - ./docker.conf/postgres:/data/postgres
+       - ./init.sql:/docker-entrypoint-initdb.d/create_tables.sql
+    ports:
+      - 5432:5432
+    restart: unless-stopped

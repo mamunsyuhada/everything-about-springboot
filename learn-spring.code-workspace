@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "spring-jpa"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}
